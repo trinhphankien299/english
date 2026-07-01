@@ -1,0 +1,247 @@
+{
+  "users": [
+    {
+      "id": "admin1",
+      "name": "Admin",
+      "email": "admin@pro.vn",
+      "password": "admin123",
+      "role": "admin",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "user1",
+      "name": "Nguyễn Văn A",
+      "email": "user@pro.vn",
+      "password": "user123",
+      "role": "user",
+      "createdAt": "2024-01-02T00:00:00.000Z"
+    },
+    {
+      "id": "user2",
+      "name": "Trần Thị B",
+      "email": "b@test.vn",
+      "password": "t123",
+      "role": "user",
+      "createdAt": "2024-01-03T00:00:00.000Z"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "category": "Grammar",
+      "difficulty": "easy",
+      "question": "She _____ to school every day.",
+      "options": [
+        "go",
+        "goes",
+        "going",
+        "gone"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q2",
+      "category": "Vocabulary",
+      "difficulty": "medium",
+      "question": "What is the synonym of \"happy\"?",
+      "options": [
+        "Sad",
+        "Angry",
+        "Joyful",
+        "Tired"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q3",
+      "category": "Grammar",
+      "difficulty": "medium",
+      "question": "I have been working here _____ 3 years.",
+      "options": [
+        "since",
+        "for",
+        "during",
+        "while"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q4",
+      "category": "Reading",
+      "difficulty": "hard",
+      "question": "The word \"ubiquitous\" most nearly means:",
+      "options": [
+        "rare",
+        "everywhere",
+        "ancient",
+        "modern"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q5",
+      "category": "Grammar",
+      "difficulty": "easy",
+      "question": "Which sentence is correct?",
+      "options": [
+        "He don't like coffee",
+        "He doesn't likes coffee",
+        "He doesn't like coffee",
+        "He not like coffee"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q6",
+      "category": "Vocabulary",
+      "difficulty": "easy",
+      "question": "What does \"benevolent\" mean?",
+      "options": [
+        "Evil",
+        "Generous",
+        "Lazy",
+        "Clever"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q7",
+      "category": "Grammar",
+      "difficulty": "hard",
+      "question": "By the time she arrived, they _____ the meeting.",
+      "options": [
+        "finish",
+        "finished",
+        "had finished",
+        "were finishing"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q8",
+      "category": "Vocabulary",
+      "difficulty": "medium",
+      "question": "Choose the antonym of \"expand\":",
+      "options": [
+        "Grow",
+        "Enlarge",
+        "Shrink",
+        "Widen"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q9",
+      "category": "Grammar",
+      "difficulty": "medium",
+      "question": "He suggested _____ to the cinema.",
+      "options": [
+        "go",
+        "going",
+        "to go",
+        "went"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q10",
+      "category": "Reading",
+      "difficulty": "easy",
+      "question": "\"The cat sat on the mat.\" What is the subject?",
+      "options": [
+        "sat",
+        "mat",
+        "cat",
+        "on"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q11",
+      "category": "Vocabulary",
+      "difficulty": "hard",
+      "question": "What does \"ephemeral\" mean?",
+      "options": [
+        "Permanent",
+        "Short-lived",
+        "Enormous",
+        "Ancient"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q12",
+      "category": "Grammar",
+      "difficulty": "easy",
+      "question": "Choose the correct form: \"I _____ a student.\"",
+      "options": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "ưqdasdasd",
+      "category": "Grammar",
+      "difficulty": "easy",
+      "options": [
+        "ádasd",
+        "ád",
+        "đâs",
+        "áda"
+      ],
+      "answer": 0,
+      "id": "joMr5eoOpjI",
+      "createdAt": "2026-07-01T10:24:09.284Z"
+    }
+  ],
+  "history": [
+    {
+      "id": "h1",
+      "userId": "user1",
+      "userName": "Nguyễn Văn A",
+      "category": "Grammar",
+      "difficulty": "all",
+      "total": 5,
+      "correct": 4,
+      "score": 80,
+      "date": "2024-06-20T08:00:00.000Z"
+    },
+    {
+      "id": "h2",
+      "userId": "user1",
+      "userName": "Nguyễn Văn A",
+      "category": "Vocabulary",
+      "difficulty": "easy",
+      "total": 5,
+      "correct": 3,
+      "score": 60,
+      "date": "2024-06-21T09:30:00.000Z"
+    },
+    {
+      "id": "h3",
+      "userId": "user2",
+      "userName": "Trần Thị B",
+      "category": "Tổng hợp",
+      "difficulty": "all",
+      "total": 10,
+      "correct": 6,
+      "score": 60,
+      "date": "2024-06-22T14:00:00.000Z"
+    },
+    {
+      "userId": "user1",
+      "userName": "Nguyễn Văn A",
+      "category": "Grammar · medium",
+      "difficulty": "medium",
+      "total": 2,
+      "correct": 1,
+      "score": 50,
+      "id": "VqjThzePGCQ",
+      "date": "2026-07-01T10:23:35.374Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
