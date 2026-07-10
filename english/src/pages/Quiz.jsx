@@ -14,9 +14,15 @@ export default function Quiz({ user, notify }) {
   const [quizMeta,     setMeta]    = useState(null)    // { questions, category }
 
   // Setup form
-  const [cat,   setCat]   = useState('all')
-  const [diff,  setDiff]  = useState('all')
-  const [count, setCount] = useState(10)
+  const [selectedExam, setSelectedExam] = useState('')
+
+  const exams = Array.from(new Set(allQuestions.map(q => q.category))).sort()
+
+  useEffect(() => {
+    if (exams.length > 0 && !selectedExam) {
+      setSelectedExam(exams[0])
+    }
+  }, [exams, selectedExam])
 
   useEffect(() => {
     questionAPI.getAll()
@@ -25,18 +31,13 @@ export default function Quiz({ user, notify }) {
       .finally(() => setLoading(false))
   }, [])
 
-  const available = allQuestions.filter(q => {
-    const mc = cat  === 'all' || q.category  === cat
-    const md = diff === 'all' || q.difficulty === diff
-    return mc && md
-  })
-  const realCount = Math.min(count, available.length)
+  const available = allQuestions.filter(q => q.category === selectedExam)
+  const realCount = available.length
 
   const handleStart = () => {
-    if (!available.length) { notify('Không có câu hỏi phù hợp', 'error'); return }
-    const shuffled = [...available].sort(() => Math.random() - .5).slice(0, realCount)
-    const label    = `${cat === 'all' ? 'Tổng hợp' : cat}${diff !== 'all' ? ' · ' + diff : ''}`
-    setMeta({ questions: shuffled, category: label })
+    if (!available.length) { notify('Không có câu hỏi trong đề này', 'error'); return }
+    const shuffled = [...available].sort(() => Math.random() - .5)
+    setMeta({ questions: shuffled, category: selectedExam })
     setPhase('taking')
   }
 
@@ -46,10 +47,10 @@ export default function Quiz({ user, notify }) {
         userId:   user.id,
         userName: user.name,
         category: quizMeta.category,
-        difficulty: diff,
         total:    result.total,
         correct:  result.correct,
         score:    result.score,
+        details:  result.details,
       })
     } catch { /* non-critical */ }
     navigate('/result', { state: { result, category: quizMeta.category } })
@@ -62,59 +63,28 @@ export default function Quiz({ user, notify }) {
     return <TakingScreen questions={quizMeta.questions} onFinish={handleFinish} onCancel={() => setPhase('setup')} />
 
   /* ── SETUP SCREEN ── */
-  const diffLabel = { all: 'Tất cả', easy: '🟢 Dễ', medium: '🟡 Trung bình', hard: '🔴 Khó' }
-
   return (
     <div className="page-wrapper">
-      <Header title="Làm bài thi 🎯" subtitle="Chọn cài đặt rồi bắt đầu luyện tập" />
+      <Header title="Làm bài thi 🎯" subtitle="Chọn đề thi rồi bắt đầu luyện tập" />
 
       <div className="grid2">
         <div className="card">
           <h3 style={{ fontFamily: 'Space Grotesk', fontWeight: 700, marginBottom: 22 }}>Cài đặt bài thi</h3>
 
           <div className="form-group">
-            <label>Chủ đề</label>
-            <select value={cat} onChange={e => setCat(e.target.value)}>
-              <option value="all">Tất cả chủ đề</option>
-              <option value="Grammar">Grammar</option>
-              <option value="Vocabulary">Vocabulary</option>
-              <option value="Reading">Reading</option>
+            <label>Chọn Đề Thi</label>
+            <select value={selectedExam} onChange={e => setSelectedExam(e.target.value)}>
+              {exams.map(exam => (
+                <option key={exam} value={exam}>{exam}</option>
+              ))}
             </select>
-          </div>
-
-          <div className="form-group">
-            <label>Độ khó</label>
-            <select value={diff} onChange={e => setDiff(e.target.value)}>
-              <option value="all">Tất cả độ khó</option>
-              <option value="easy">Dễ</option>
-              <option value="medium">Trung bình</option>
-              <option value="hard">Khó</option>
-            </select>
-          </div>
-
-          <div className="form-group">
-            <label>
-              Số câu: <strong style={{ color: 'var(--accent)' }}>{realCount}</strong>
-              {available.length < count && (
-                <span style={{ color: 'var(--warn)', fontSize: 11 }}> (tối đa {available.length})</span>
-              )}
-            </label>
-            <input
-              type="range" min={5} max={Math.max(5, available.length)} step={5}
-              value={count} onChange={e => setCount(+e.target.value)}
-              style={{ padding: 0, height: 'auto', border: 'none', background: 'transparent', cursor: 'pointer' }}
-            />
-            <div className="flex jc-sb text-sm text-muted mt8">
-              <span>5</span><span>{Math.max(5, available.length)}</span>
-            </div>
           </div>
 
           {/* Summary */}
           <div style={{ padding: '14px 16px', background: 'var(--surface2)', borderRadius: 'var(--rsm)', border: '1px solid var(--border)', marginBottom: 22, fontSize: 13, lineHeight: 2 }}>
-            <div className="text-muted" style={{ marginBottom: 4, fontWeight: 600 }}>Tóm tắt bài thi</div>
-            <div>📚 Chủ đề: <strong>{cat === 'all' ? 'Tổng hợp' : cat}</strong></div>
-            <div>🎯 Độ khó: <strong>{diffLabel[diff]}</strong></div>
-            <div>📝 Số câu: <strong>{realCount} câu</strong></div>
+            <div className="text-muted" style={{ marginBottom: 4, fontWeight: 600 }}>Tóm tắt đề thi</div>
+            <div>📚 Đề: <strong>{selectedExam}</strong></div>
+            <div>📝 Số câu hỏi: <strong>{realCount} câu</strong></div>
           </div>
 
           <button
@@ -122,7 +92,7 @@ export default function Quiz({ user, notify }) {
             onClick={handleStart}
             disabled={!available.length}
           >
-            {!available.length ? '⚠️ Không có câu phù hợp' : 'Bắt đầu làm bài →'}
+            {!available.length ? '⚠️ Đề thi trống' : 'Bắt đầu làm bài →'}
           </button>
         </div>
 
@@ -163,13 +133,24 @@ function TakingScreen({ questions, onFinish, onCancel }) {
     if (revealed) return
     setSelected(i)
     setRevealed(true)
-    setAnswers(prev => [...prev, { correct: i === q.answer }])
+    setAnswers(prev => [...prev, { selected: i, correct: i === q.answer }])
   }
 
   const next = () => {
     if (idx + 1 >= questions.length) {
       const correct = answers.filter(a => a.correct).length
-      onFinish({ total: questions.length, correct, score: Math.round(correct / questions.length * 100) })
+      onFinish({ 
+        total: questions.length, 
+        correct, 
+        score: Math.round(correct / questions.length * 100),
+        details: questions.map((q, i) => ({
+          question: q.question,
+          options: q.options,
+          answer: q.answer,
+          selected: answers[i].selected,
+          correct: answers[i].correct
+        }))
+      })
     } else {
       setIdx(i => i + 1)
       setSelected(null)

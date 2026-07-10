@@ -8,14 +8,15 @@ const http = axios.create({
 /* ══ AUTH ══ */
 export const authAPI = {
   login: async (email, password) => {
-    const { data } = await http.get(`/users?email=${email}&password=${password}`)
-    if (!data.length) throw new Error('Email hoặc mật khẩu không đúng')
-    const { password: _pw, ...user } = data[0]
-    return user
+    const { data } = await http.get(`/users?email=${encodeURIComponent(email)}`)
+    const user = data.find(u => u.password === password)
+    if (!user) throw new Error('Email hoặc mật khẩu không đúng')
+    const { password: _pw, ...safeUser } = user
+    return safeUser
   },
 
   register: async ({ name, email, password }) => {
-    const { data: existing } = await http.get(`/users?email=${email}`)
+    const { data: existing } = await http.get(`/users?email=${encodeURIComponent(email)}`)
     if (existing.length) throw new Error('Email đã được sử dụng')
     const newUser = {
       id: `u_${Date.now()}`,
@@ -56,8 +57,8 @@ export const userAPI = {
 
 /* ══ HISTORY ══ */
 export const historyAPI = {
-  getAll:     ()       => http.get('/history?_sort=date&_order=desc').then(r => r.data),
-  getByUser:  (userId) => http.get(`/history?userId=${userId}&_sort=date&_order=desc`).then(r => r.data),
+  getAll:     ()       => http.get('/history').then(r => r.data.sort((a, b) => new Date(b.date) - new Date(a.date))),
+  getByUser:  (userId) => http.get(`/history?userId=${userId}`).then(r => r.data.sort((a, b) => new Date(b.date) - new Date(a.date))),
   create:     (data)   => http.post('/history', {
     ...data,
     id:   `h_${Date.now()}`,

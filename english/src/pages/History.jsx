@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../Components/Header'
 import { historyAPI } from '../services/api'
+import QuizDetailModal from '../Components/QuizDetailModal'
 
 export default function History({ user }) {
   const isAdmin = user?.role === 'admin'
@@ -9,6 +10,7 @@ export default function History({ user }) {
   const [loading, setLoading] = useState(true)
   const [search,  setSearch]  = useState('')
   const [catFilter, setCat]   = useState('all')
+  const [selectedRecord, setSelectedRecord] = useState(null)
 
   useEffect(() => {
     const load = isAdmin ? historyAPI.getAll() : historyAPI.getByUser(user.id)
@@ -21,6 +23,8 @@ export default function History({ user }) {
     const matchC = catFilter === 'all' || h.category?.includes(catFilter)
     return matchS && matchC
   })
+
+  const exams = Array.from(new Set(history.map(h => h.category).filter(Boolean))).sort()
 
   const gradeLabel = (s) => s >= 80 ? 'Giỏi' : s >= 60 ? 'Đạt' : 'Chưa đạt'
   const gradeClass = (s) => s >= 80 ? 'badge-green' : s >= 60 ? 'badge-yellow' : 'badge-red'
@@ -60,14 +64,11 @@ export default function History({ user }) {
         <div className="search-row">
           <input
             value={search} onChange={e => setSearch(e.target.value)}
-            placeholder="🔍 Tìm kiếm chủ đề, tên..."
+            placeholder="🔍 Tìm kiếm đề thi, tên..."
           />
           <select value={catFilter} onChange={e => setCat(e.target.value)}>
-            <option value="all">Tất cả chủ đề</option>
-            <option value="Grammar">Grammar</option>
-            <option value="Vocabulary">Vocabulary</option>
-            <option value="Reading">Reading</option>
-            <option value="Tổng hợp">Tổng hợp</option>
+            <option value="all">Tất cả đề thi</option>
+            {exams.map(ex => <option key={ex} value={ex}>{ex}</option>)}
           </select>
         </div>
 
@@ -86,7 +87,7 @@ export default function History({ user }) {
                 <tr>
                   <th>#</th>
                   {isAdmin && <th>Học viên</th>}
-                  <th>Chủ đề</th>
+                  <th>Đề thi</th>
                   <th>Kết quả</th>
                   <th>Điểm</th>
                   <th>Xếp loại</th>
@@ -95,7 +96,7 @@ export default function History({ user }) {
               </thead>
               <tbody>
                 {filtered.map((h, i) => (
-                  <tr key={h.id}>
+                  <tr key={h.id} onClick={() => setSelectedRecord(h)} style={{ cursor: 'pointer' }}>
                     <td className="text-muted">{i + 1}</td>
                     {isAdmin && (
                       <td style={{ color: 'var(--text)', fontWeight: 500 }}>{h.userName}</td>
@@ -120,6 +121,8 @@ export default function History({ user }) {
           </div>
         )}
       </div>
+
+      <QuizDetailModal record={selectedRecord} onClose={() => setSelectedRecord(null)} />
     </div>
   )
 }

@@ -2,6 +2,20 @@ import React, { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { authAPI } from '../services/api'
 
+const Field = ({ name, label, type = 'text', placeholder, form, set, errors }) => (
+  <div className="form-group">
+    <label>{label}</label>
+    <input
+      type={type}
+      value={form[name]}
+      onChange={e => set(name, e.target.value)}
+      placeholder={placeholder}
+      style={errors[name] ? { borderColor: 'var(--danger)' } : {}}
+    />
+    {errors[name] && <div className="form-error">{errors[name]}</div>}
+  </div>
+)
+
 export default function Register({ notify }) {
   const navigate = useNavigate()
   const [form, setForm]   = useState({ name: '', email: '', password: '', confirm: '' })
@@ -35,20 +49,6 @@ export default function Register({ notify }) {
     }
   }
 
-  const Field = ({ name, label, type = 'text', placeholder }) => (
-    <div className="form-group">
-      <label>{label}</label>
-      <input
-        type={type}
-        value={form[name]}
-        onChange={e => set(name, e.target.value)}
-        placeholder={placeholder}
-        style={errors[name] ? { borderColor: 'var(--danger)' } : {}}
-      />
-      {errors[name] && <div className="form-error">{errors[name]}</div>}
-    </div>
-  )
-
   return (
     <div className="auth-screen">
       <div className="auth-card">
@@ -58,10 +58,10 @@ export default function Register({ notify }) {
         </div>
 
         <form onSubmit={handleSubmit}>
-          <Field name="name"     label="Họ và tên *"       placeholder="Nguyễn Văn A" />
-          <Field name="email"    label="Email *"            type="email" placeholder="you@example.com" />
-          <Field name="password" label="Mật khẩu *"        type="password" placeholder="Tối thiểu 6 ký tự" />
-          <Field name="confirm"  label="Xác nhận mật khẩu *" type="password" placeholder="Nhập lại mật khẩu" />
+          <Field name="name"     label="Họ và tên *"       placeholder="Nguyễn Văn A" form={form} set={set} errors={errors} />
+          <Field name="email"    label="Email *"            type="email" placeholder="you@example.com" form={form} set={set} errors={errors} />
+          <Field name="password" label="Mật khẩu *"        type="password" placeholder="Tối thiểu 6 ký tự" form={form} set={set} errors={errors} />
+          <Field name="confirm"  label="Xác nhận mật khẩu *" type="password" placeholder="Nhập lại mật khẩu" form={form} set={set} errors={errors} />
 
           <button type="submit" className="btn btn-primary w-full btn-lg" disabled={loading}>
             {loading ? '⏳ Đang xử lý...' : 'Tạo tài khoản'}

@@ -23,14 +23,22 @@
       "password": "t123",
       "role": "user",
       "createdAt": "2024-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "5dQ_ZXCd6Ww",
+      "name": "Trịnh Phan Kiên",
+      "email": "trinhphankien299@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "createdAt": "2026-07-10T15:53:12.579Z"
     }
   ],
   "questions": [
     {
       "id": "q1",
-      "category": "Grammar",
+      "category": "Đề 1",
       "difficulty": "easy",
-      "question": "She _____ to school every day.",
+      "question": "She _____ to school by bus every day.",
       "options": [
         "go",
         "goes",
@@ -41,100 +49,165 @@
     },
     {
       "id": "q2",
-      "category": "Vocabulary",
-      "difficulty": "medium",
-      "question": "What is the synonym of \"happy\"?",
+      "category": "Đề 1",
+      "difficulty": "easy",
+      "question": "They _____ football every Sunday.",
       "options": [
-        "Sad",
-        "Angry",
-        "Joyful",
-        "Tired"
+        "play",
+        "plays",
+        "playing",
+        "played"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "id": "q3",
-      "category": "Grammar",
-      "difficulty": "medium",
-      "question": "I have been working here _____ 3 years.",
+      "category": "Đề 1",
+      "difficulty": "easy",
+      "question": "I _____ a cup of coffee every morning.",
       "options": [
-        "since",
-        "for",
-        "during",
-        "while"
+        "drink",
+        "drinks",
+        "drank",
+        "drinking"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "id": "q4",
-      "category": "Reading",
-      "difficulty": "hard",
-      "question": "The word \"ubiquitous\" most nearly means:",
-      "options": [
-        "rare",
-        "everywhere",
-        "ancient",
-        "modern"
-      ],
-      "answer": 1
-    },
-    {
-      "id": "q5",
-      "category": "Grammar",
+      "category": "Đề 1",
       "difficulty": "easy",
-      "question": "Which sentence is correct?",
+      "question": "Choose the correct sentence.",
       "options": [
-        "He don't like coffee",
-        "He doesn't likes coffee",
-        "He doesn't like coffee",
-        "He not like coffee"
+        "He don't like music.",
+        "He doesn't likes music.",
+        "He doesn't like music.",
+        "He not like music."
       ],
       "answer": 2
     },
     {
-      "id": "q6",
-      "category": "Vocabulary",
+      "id": "q5",
+      "category": "Đề 1",
       "difficulty": "easy",
-      "question": "What does \"benevolent\" mean?",
+      "question": "There _____ three books on the desk.",
       "options": [
-        "Evil",
-        "Generous",
-        "Lazy",
-        "Clever"
+        "is",
+        "are",
+        "was",
+        "be"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q6",
+      "category": "Đề 1",
+      "difficulty": "easy",
+      "question": "My mother _____ dinner at 7 p.m. every day.",
+      "options": [
+        "cook",
+        "cooks",
+        "cooking",
+        "cooked"
       ],
       "answer": 1
     },
     {
       "id": "q7",
-      "category": "Grammar",
-      "difficulty": "hard",
-      "question": "By the time she arrived, they _____ the meeting.",
+      "category": "Đề 1",
+      "difficulty": "easy",
+      "question": "Choose the correct plural form of 'mouse'.",
       "options": [
-        "finish",
-        "finished",
-        "had finished",
-        "were finishing"
+        "mouses",
+        "mouse",
+        "mice",
+        "mices"
       ],
       "answer": 2
     },
     {
       "id": "q8",
-      "category": "Vocabulary",
-      "difficulty": "medium",
-      "question": "Choose the antonym of \"expand\":",
+      "category": "Đề 1",
+      "difficulty": "easy",
+      "question": "Which word is an adjective?",
       "options": [
-        "Grow",
-        "Enlarge",
-        "Shrink",
-        "Widen"
+        "Quick",
+        "Quickly",
+        "Quickness",
+        "Quicken"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q9",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "She _____ English for five years.",
+      "options": [
+        "learned",
+        "has learned",
+        "learns",
+        "is learning"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q10",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "If I _____ rich, I would travel around the world.",
+      "options": [
+        "am",
+        "was",
+        "were",
+        "will be"
       ],
       "answer": 2
     },
     {
-      "id": "q9",
-      "category": "Grammar",
+      "id": "q11",
+      "category": "Đề 1",
       "difficulty": "medium",
-      "question": "He suggested _____ to the cinema.",
+      "question": "He apologized _____ being late.",
+      "options": [
+        "to",
+        "for",
+        "with",
+        "about"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q12",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "Choose the synonym of 'famous'.",
+      "options": [
+        "Unknown",
+        "Well-known",
+        "Hidden",
+        "Silent"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q13",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "Choose the antonym of 'careful'.",
+      "options": [
+        "Cautious",
+        "Careless",
+        "Gentle",
+        "Kind"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q14",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "She suggested _____ to the beach.",
       "options": [
         "go",
         "going",
@@ -144,104 +217,3074 @@
       "answer": 1
     },
     {
-      "id": "q10",
-      "category": "Reading",
-      "difficulty": "easy",
-      "question": "\"The cat sat on the mat.\" What is the subject?",
+      "id": "q15",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "The book _____ by my teacher yesterday.",
       "options": [
-        "sat",
-        "mat",
-        "cat",
-        "on"
+        "gave",
+        "was given",
+        "is given",
+        "has given"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q16",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "Choose the correct preposition: She is interested _____ music.",
+      "options": [
+        "at",
+        "on",
+        "in",
+        "for"
       ],
       "answer": 2
     },
     {
-      "id": "q11",
-      "category": "Vocabulary",
-      "difficulty": "hard",
-      "question": "What does \"ephemeral\" mean?",
+      "id": "q17",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "I don't know the man _____ lives next door.",
       "options": [
-        "Permanent",
-        "Short-lived",
-        "Enormous",
+        "who",
+        "which",
+        "where",
+        "whose"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q18",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "By this time tomorrow, we _____ the exam.",
+      "options": [
+        "will finish",
+        "will have finished",
+        "finish",
+        "finished"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q19",
+      "category": "Đề 1",
+      "difficulty": "hard",
+      "question": "By the time I arrived, they _____ dinner.",
+      "options": [
+        "finished",
+        "had finished",
+        "have finished",
+        "were finishing"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q20",
+      "category": "Đề 1",
+      "difficulty": "hard",
+      "question": "Choose the meaning of 'ubiquitous'.",
+      "options": [
+        "Rare",
+        "Found everywhere",
+        "Expensive",
         "Ancient"
       ],
       "answer": 1
     },
     {
-      "id": "q12",
-      "category": "Grammar",
-      "difficulty": "easy",
-      "question": "Choose the correct form: \"I _____ a student.\"",
+      "id": "q21",
+      "category": "Đề 1",
+      "difficulty": "hard",
+      "question": "Neither John nor his friends _____ coming tonight.",
       "options": [
         "is",
-        "am",
         "are",
+        "was",
         "be"
       ],
       "answer": 1
     },
     {
-      "question": "ưqdasdasd",
-      "category": "Grammar",
-      "difficulty": "easy",
+      "id": "q22",
+      "category": "Đề 1",
+      "difficulty": "hard",
+      "question": "Choose the correct reported speech: Mary said, 'I am tired.'",
       "options": [
-        "ádasd",
-        "ád",
-        "đâs",
-        "áda"
+        "Mary said that she is tired.",
+        "Mary said that she was tired.",
+        "Mary said she tired.",
+        "Mary told that she was tired."
       ],
-      "answer": 0,
-      "id": "joMr5eoOpjI",
-      "createdAt": "2026-07-01T10:24:09.284Z"
-    }
-  ],
-  "history": [
-    {
-      "id": "h1",
-      "userId": "user1",
-      "userName": "Nguyễn Văn A",
-      "category": "Grammar",
-      "difficulty": "all",
-      "total": 5,
-      "correct": 4,
-      "score": 80,
-      "date": "2024-06-20T08:00:00.000Z"
+      "answer": 1
     },
     {
-      "id": "h2",
-      "userId": "user1",
-      "userName": "Nguyễn Văn A",
-      "category": "Vocabulary",
+      "id": "q23",
+      "category": "Đề 1",
+      "difficulty": "hard",
+      "question": "If he _____ harder, he would have passed the exam.",
+      "options": [
+        "studied",
+        "had studied",
+        "studies",
+        "has studied"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q24",
+      "category": "Đề 1",
+      "difficulty": "hard",
+      "question": "The project _____ before the manager arrived.",
+      "options": [
+        "completed",
+        "had been completed",
+        "has completed",
+        "was completing"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q25",
+      "category": "Đề 1",
+      "difficulty": "hard",
+      "question": "What does the word 'ephemeral' mean?",
+      "options": [
+        "Permanent",
+        "Short-lived",
+        "Valuable",
+        "Beautiful"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q26",
+      "category": "Đề 1",
       "difficulty": "easy",
-      "total": 5,
-      "correct": 3,
-      "score": 60,
-      "date": "2024-06-21T09:30:00.000Z"
+      "question": "She usually _____ breakfast at 7 a.m.",
+      "options": [
+        "have",
+        "has",
+        "having",
+        "had"
+      ],
+      "answer": 1
     },
     {
-      "id": "h3",
-      "userId": "user2",
-      "userName": "Trần Thị B",
-      "category": "Tổng hợp",
-      "difficulty": "all",
-      "total": 10,
-      "correct": 6,
-      "score": 60,
-      "date": "2024-06-22T14:00:00.000Z"
+      "id": "q27",
+      "category": "Đề 1",
+      "difficulty": "easy",
+      "question": "They _____ in Hanoi last year.",
+      "options": [
+        "live",
+        "lived",
+        "living",
+        "lives"
+      ],
+      "answer": 1
     },
     {
-      "userId": "user1",
-      "userName": "Nguyễn Văn A",
-      "category": "Grammar · medium",
+      "id": "q28",
+      "category": "Đề 1",
+      "difficulty": "easy",
+      "question": "Choose the correct article: I bought _____ umbrella yesterday.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q29",
+      "category": "Đề 1",
+      "difficulty": "easy",
+      "question": "Which word is a verb?",
+      "options": [
+        "Happiness",
+        "Beautiful",
+        "Run",
+        "Slowly"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q30",
+      "category": "Đề 1",
+      "difficulty": "easy",
+      "question": "My brother _____ TV every evening.",
+      "options": [
+        "watch",
+        "watches",
+        "watching",
+        "watched"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q31",
+      "category": "Đề 1",
       "difficulty": "medium",
-      "total": 2,
-      "correct": 1,
-      "score": 50,
-      "id": "VqjThzePGCQ",
-      "date": "2026-07-01T10:23:35.374Z"
+      "question": "I _____ this book since Monday.",
+      "options": [
+        "read",
+        "have read",
+        "am reading",
+        "reads"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q32",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "Choose the synonym of 'rapid'.",
+      "options": [
+        "Slow",
+        "Fast",
+        "Late",
+        "Quiet"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q33",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "Choose the antonym of 'ancient'.",
+      "options": [
+        "Old",
+        "Historic",
+        "Modern",
+        "Traditional"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q34",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "He is good _____ mathematics.",
+      "options": [
+        "at",
+        "on",
+        "in",
+        "with"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q35",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "This is the student _____ won the competition.",
+      "options": [
+        "which",
+        "who",
+        "where",
+        "whose"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q36",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "If it _____ tomorrow, we will stay at home.",
+      "options": [
+        "rain",
+        "rains",
+        "rained",
+        "will rain"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q37",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "The homework _____ before the class started.",
+      "options": [
+        "finished",
+        "had finished",
+        "had been finished",
+        "was finishing"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q38",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "She insisted _____ paying for dinner.",
+      "options": [
+        "on",
+        "at",
+        "for",
+        "with"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q39",
+      "category": "Đề 1",
+      "difficulty": "hard",
+      "question": "No sooner _____ home than it started raining.",
+      "options": [
+        "I reached",
+        "had I reached",
+        "I had reached",
+        "did I reach"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q40",
+      "category": "Đề 1",
+      "difficulty": "hard",
+      "question": "Scarcely _____ when the phone rang.",
+      "options": [
+        "had I slept",
+        "I had slept",
+        "did I sleep",
+        "I slept"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q41",
+      "category": "Đề 1",
+      "difficulty": "hard",
+      "question": "Choose the meaning of 'meticulous'.",
+      "options": [
+        "Careless",
+        "Very careful",
+        "Lazy",
+        "Funny"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q42",
+      "category": "Đề 1",
+      "difficulty": "hard",
+      "question": "The manager demanded that every employee _____ on time.",
+      "options": [
+        "is",
+        "be",
+        "was",
+        "been"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q43",
+      "category": "Đề 1",
+      "difficulty": "hard",
+      "question": "Hardly had she entered the room _____ everyone stood up.",
+      "options": [
+        "than",
+        "when",
+        "then",
+        "that"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q44",
+      "category": "Đề 1",
+      "difficulty": "hard",
+      "question": "Choose the synonym of 'diligent'.",
+      "options": [
+        "Lazy",
+        "Hard-working",
+        "Weak",
+        "Quiet"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q45",
+      "category": "Đề 1",
+      "difficulty": "hard",
+      "question": "Choose the antonym of 'scarce'.",
+      "options": [
+        "Rare",
+        "Limited",
+        "Abundant",
+        "Small"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q46",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "He would rather _____ at home than go out.",
+      "options": [
+        "stay",
+        "stays",
+        "staying",
+        "to stay"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q47",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "Choose the correct sentence.",
+      "options": [
+        "She enjoys to read books.",
+        "She enjoys reading books.",
+        "She enjoy reading books.",
+        "She enjoys read books."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q48",
+      "category": "Đề 1",
+      "difficulty": "easy",
+      "question": "How many days are there in a week?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q49",
+      "category": "Đề 1",
+      "difficulty": "easy",
+      "question": "Which month comes after June?",
+      "options": [
+        "May",
+        "July",
+        "August",
+        "September"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q50",
+      "category": "Đề 1",
+      "difficulty": "medium",
+      "question": "Choose the correct question.",
+      "options": [
+        "Where do you live?",
+        "Where you do live?",
+        "Where are you live?",
+        "Where does you live?"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q51",
+      "category": "Đề 2",
+      "difficulty": "easy",
+      "question": "They _____ to school together every morning.",
+      "options": [
+        "walk",
+        "walks",
+        "walking",
+        "walked"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q52",
+      "category": "Đề 2",
+      "difficulty": "easy",
+      "question": "My sister _____ a doctor.",
+      "options": [
+        "are",
+        "is",
+        "am",
+        "be"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q53",
+      "category": "Đề 2",
+      "difficulty": "easy",
+      "question": "We _____ dinner at 6:30 every evening.",
+      "options": [
+        "eat",
+        "eats",
+        "ate",
+        "eating"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q54",
+      "category": "Đề 2",
+      "difficulty": "easy",
+      "question": "Choose the correct sentence.",
+      "options": [
+        "She don't like tea.",
+        "She doesn't like tea.",
+        "She doesn't likes tea.",
+        "She not like tea."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q55",
+      "category": "Đề 2",
+      "difficulty": "easy",
+      "question": "There _____ an apple on the table.",
+      "options": [
+        "are",
+        "is",
+        "were",
+        "be"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q56",
+      "category": "Đề 2",
+      "difficulty": "easy",
+      "question": "The students _____ English every Monday.",
+      "options": [
+        "study",
+        "studies",
+        "studying",
+        "studied"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q57",
+      "category": "Đề 2",
+      "difficulty": "easy",
+      "question": "Choose the plural form of 'woman'.",
+      "options": [
+        "womans",
+        "womanes",
+        "women",
+        "womens"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q58",
+      "category": "Đề 2",
+      "difficulty": "easy",
+      "question": "Which word is an adverb?",
+      "options": [
+        "Happy",
+        "Quickly",
+        "Friend",
+        "Beauty"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q59",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "They _____ in this company since 2022.",
+      "options": [
+        "worked",
+        "have worked",
+        "work",
+        "working"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q60",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "If she _____ harder, she would get better grades.",
+      "options": [
+        "studies",
+        "studied",
+        "will study",
+        "study"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q61",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "He succeeded _____ passing the exam.",
+      "options": [
+        "at",
+        "in",
+        "for",
+        "on"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q62",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "Choose the synonym of 'intelligent'.",
+      "options": [
+        "Stupid",
+        "Clever",
+        "Weak",
+        "Lazy"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q63",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "Choose the antonym of 'strong'.",
+      "options": [
+        "Powerful",
+        "Weak",
+        "Healthy",
+        "Tall"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q64",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "She is afraid _____ spiders.",
+      "options": [
+        "of",
+        "with",
+        "about",
+        "at"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q65",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "The girl _____ won the prize is my cousin.",
+      "options": [
+        "which",
+        "who",
+        "where",
+        "whose"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q66",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "By next month, I _____ my project.",
+      "options": [
+        "finish",
+        "will have finished",
+        "finished",
+        "will finish"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q67",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "The letter _____ yesterday.",
+      "options": [
+        "sent",
+        "was sent",
+        "has sent",
+        "is sending"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q68",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "Choose the correct question.",
+      "options": [
+        "What does she do?",
+        "What she does?",
+        "What do she do?",
+        "What is she do?"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q69",
+      "category": "Đề 2",
+      "difficulty": "hard",
+      "question": "When I arrived, they _____ the meeting.",
+      "options": [
+        "finished",
+        "had finished",
+        "have finished",
+        "finish"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q70",
+      "category": "Đề 2",
+      "difficulty": "hard",
+      "question": "Choose the meaning of 'resilient'.",
+      "options": [
+        "Easily broken",
+        "Able to recover quickly",
+        "Very old",
+        "Extremely rich"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q71",
+      "category": "Đề 2",
+      "difficulty": "hard",
+      "question": "Neither the teacher nor the students _____ ready.",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "be"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q72",
+      "category": "Đề 2",
+      "difficulty": "hard",
+      "question": "Choose the correct reported speech: He said, \"I have finished my homework.\"",
+      "options": [
+        "He said that he has finished his homework.",
+        "He said that he had finished his homework.",
+        "He said he finished my homework.",
+        "He told that he had finished his homework."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q73",
+      "category": "Đề 2",
+      "difficulty": "hard",
+      "question": "If they _____ earlier, they would have caught the train.",
+      "options": [
+        "left",
+        "had left",
+        "leave",
+        "have left"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q74",
+      "category": "Đề 2",
+      "difficulty": "hard",
+      "question": "The building _____ before the storm hit.",
+      "options": [
+        "completed",
+        "had been completed",
+        "has completed",
+        "was completing"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q75",
+      "category": "Đề 2",
+      "difficulty": "hard",
+      "question": "What does the word 'obsolete' mean?",
+      "options": [
+        "Modern",
+        "Out of date",
+        "Useful",
+        "Popular"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q76",
+      "category": "Đề 2",
+      "difficulty": "easy",
+      "question": "My father _____ to work by car every day.",
+      "options": [
+        "go",
+        "goes",
+        "going",
+        "gone"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q77",
+      "category": "Đề 2",
+      "difficulty": "easy",
+      "question": "We _____ TV every evening.",
+      "options": [
+        "watch",
+        "watches",
+        "watching",
+        "watched"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q78",
+      "category": "Đề 2",
+      "difficulty": "easy",
+      "question": "Choose the correct article: _____ Earth goes around the Sun.",
+      "options": [
+        "A",
+        "An",
+        "The",
+        "No article"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q79",
+      "category": "Đề 2",
+      "difficulty": "easy",
+      "question": "Which word is a noun?",
+      "options": [
+        "Beautiful",
+        "Beauty",
+        "Beautify",
+        "Beautifully"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q80",
+      "category": "Đề 2",
+      "difficulty": "easy",
+      "question": "She _____ her homework every night.",
+      "options": [
+        "do",
+        "does",
+        "doing",
+        "did"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q81",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "I _____ this movie three times.",
+      "options": [
+        "see",
+        "saw",
+        "have seen",
+        "seeing"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q82",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "Choose the synonym of \"honest\".",
+      "options": [
+        "Truthful",
+        "Lazy",
+        "Cruel",
+        "Angry"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q83",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "Choose the antonym of \"success\".",
+      "options": [
+        "Victory",
+        "Achievement",
+        "Failure",
+        "Progress"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q84",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "She is looking forward _____ you.",
+      "options": [
+        "see",
+        "to seeing",
+        "seeing",
+        "to see"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q85",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "The man _____ car was stolen called the police.",
+      "options": [
+        "who",
+        "which",
+        "whose",
+        "whom"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q86",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "If you heat water to 100°C, it _____.",
+      "options": [
+        "boiled",
+        "boils",
+        "will boil",
+        "boil"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q87",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "The room _____ every day.",
+      "options": [
+        "cleans",
+        "is cleaned",
+        "clean",
+        "cleaned"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q88",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "He accused me _____ lying.",
+      "options": [
+        "of",
+        "for",
+        "to",
+        "with"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q89",
+      "category": "Đề 2",
+      "difficulty": "hard",
+      "question": "Not until midnight _____ home.",
+      "options": [
+        "did he return",
+        "he returned",
+        "returned he",
+        "he did return"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q90",
+      "category": "Đề 2",
+      "difficulty": "hard",
+      "question": "Choose the meaning of \"ambiguous\".",
+      "options": [
+        "Clear",
+        "Uncertain or unclear",
+        "Simple",
+        "Interesting"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q91",
+      "category": "Đề 2",
+      "difficulty": "hard",
+      "question": "Seldom _____ such a beautiful place.",
+      "options": [
+        "I have seen",
+        "have I seen",
+        "I saw",
+        "did I seen"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q92",
+      "category": "Đề 2",
+      "difficulty": "hard",
+      "question": "Choose the correct reported speech: She said, \"I will call you tomorrow.\"",
+      "options": [
+        "She said that she will call me tomorrow.",
+        "She said that she would call me the next day.",
+        "She said she calls me tomorrow.",
+        "She told she would call me tomorrow."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q93",
+      "category": "Đề 2",
+      "difficulty": "hard",
+      "question": "Had I known the truth, I _____ differently.",
+      "options": [
+        "would act",
+        "would have acted",
+        "acted",
+        "had acted"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q94",
+      "category": "Đề 2",
+      "difficulty": "hard",
+      "question": "The report _____ before the meeting began.",
+      "options": [
+        "had prepared",
+        "had been prepared",
+        "was preparing",
+        "has prepared"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q95",
+      "category": "Đề 2",
+      "difficulty": "hard",
+      "question": "Choose the synonym of \"reluctant\".",
+      "options": [
+        "Willing",
+        "Unwilling",
+        "Happy",
+        "Excited"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q96",
+      "category": "Đề 2",
+      "difficulty": "hard",
+      "question": "Choose the antonym of \"optimistic\".",
+      "options": [
+        "Hopeful",
+        "Positive",
+        "Pessimistic",
+        "Confident"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q97",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "I'd rather _____ at home tonight.",
+      "options": [
+        "stay",
+        "stays",
+        "staying",
+        "to stay"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q98",
+      "category": "Đề 2",
+      "difficulty": "medium",
+      "question": "Choose the correct sentence.",
+      "options": [
+        "He suggested to go home.",
+        "He suggested going home.",
+        "He suggested go home.",
+        "He suggested went home."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q99",
+      "category": "Đề 2",
+      "difficulty": "easy",
+      "question": "How many months are there in a year?",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q100",
+      "category": "Đề 2",
+      "difficulty": "easy",
+      "question": "Which day comes after Friday?",
+      "options": [
+        "Thursday",
+        "Saturday",
+        "Sunday",
+        "Monday"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q101",
+      "category": "Đề 3",
+      "difficulty": "easy",
+      "question": "Tom _____ to work every morning.",
+      "options": [
+        "drive",
+        "drives",
+        "driving",
+        "drove"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q102",
+      "category": "Đề 3",
+      "difficulty": "easy",
+      "question": "They _____ basketball after school.",
+      "options": [
+        "play",
+        "plays",
+        "playing",
+        "played"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q103",
+      "category": "Đề 3",
+      "difficulty": "easy",
+      "question": "She _____ a new dress yesterday.",
+      "options": [
+        "buy",
+        "buys",
+        "bought",
+        "buying"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q104",
+      "category": "Đề 3",
+      "difficulty": "easy",
+      "question": "Choose the correct sentence.",
+      "options": [
+        "I doesn't like milk.",
+        "I don't like milk.",
+        "I don't likes milk.",
+        "I not like milk."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q105",
+      "category": "Đề 3",
+      "difficulty": "easy",
+      "question": "There _____ two cats in the garden.",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "be"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q106",
+      "category": "Đề 3",
+      "difficulty": "easy",
+      "question": "We _____ English on Mondays.",
+      "options": [
+        "study",
+        "studies",
+        "studied",
+        "studying"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q107",
+      "category": "Đề 3",
+      "difficulty": "easy",
+      "question": "Choose the plural form of 'tooth'.",
+      "options": [
+        "tooths",
+        "teeth",
+        "toothes",
+        "teeths"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q108",
+      "category": "Đề 3",
+      "difficulty": "easy",
+      "question": "Which word is an adjective?",
+      "options": [
+        "Carefully",
+        "Care",
+        "Careful",
+        "Caringly"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q109",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "She _____ here since 2020.",
+      "options": [
+        "worked",
+        "works",
+        "has worked",
+        "working"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q110",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "If I _____ more free time, I would learn Japanese.",
+      "options": [
+        "have",
+        "had",
+        "will have",
+        "am having"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q111",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "He is interested _____ photography.",
+      "options": [
+        "at",
+        "on",
+        "in",
+        "with"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q112",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "Choose the synonym of 'ancient'.",
+      "options": [
+        "Modern",
+        "Old",
+        "Young",
+        "New"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q113",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "Choose the antonym of 'cheap'.",
+      "options": [
+        "Low",
+        "Affordable",
+        "Expensive",
+        "Small"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q114",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "She enjoys _____ novels.",
+      "options": [
+        "read",
+        "reading",
+        "to read",
+        "reads"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q115",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "The bicycle _____ by my brother last week.",
+      "options": [
+        "stole",
+        "was stolen",
+        "is stolen",
+        "has stolen"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q116",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "The boy _____ is standing there is my cousin.",
+      "options": [
+        "who",
+        "which",
+        "where",
+        "whose"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q117",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "By next year, she _____ from university.",
+      "options": [
+        "graduates",
+        "will graduate",
+        "will have graduated",
+        "graduated"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q118",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "He apologized _____ breaking the vase.",
+      "options": [
+        "for",
+        "to",
+        "with",
+        "about"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q119",
+      "category": "Đề 3",
+      "difficulty": "hard",
+      "question": "By the time we got there, the movie _____.",
+      "options": [
+        "started",
+        "had started",
+        "has started",
+        "starts"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q120",
+      "category": "Đề 3",
+      "difficulty": "hard",
+      "question": "What does the word 'vivid' mean?",
+      "options": [
+        "Dull",
+        "Bright and clear",
+        "Tiny",
+        "Weak"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q121",
+      "category": "Đề 3",
+      "difficulty": "hard",
+      "question": "Neither my brother nor my parents _____ at home.",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "be"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q122",
+      "category": "Đề 3",
+      "difficulty": "hard",
+      "question": "Choose the correct reported speech: She said, 'I can swim.'",
+      "options": [
+        "She said she can swim.",
+        "She said she could swim.",
+        "She said she swims.",
+        "She told she could swim."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q123",
+      "category": "Đề 3",
+      "difficulty": "hard",
+      "question": "If they _____ earlier, they would have arrived on time.",
+      "options": [
+        "leave",
+        "left",
+        "had left",
+        "have left"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q124",
+      "category": "Đề 3",
+      "difficulty": "hard",
+      "question": "The bridge _____ before the flood came.",
+      "options": [
+        "completed",
+        "had been completed",
+        "has completed",
+        "was completing"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q125",
+      "category": "Đề 3",
+      "difficulty": "hard",
+      "question": "Choose the meaning of 'contemporary'.",
+      "options": [
+        "Ancient",
+        "Modern",
+        "Tiny",
+        "Temporary"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q126",
+      "category": "Đề 3",
+      "difficulty": "easy",
+      "question": "My mother _____ breakfast every morning.",
+      "options": [
+        "make",
+        "makes",
+        "making",
+        "made"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q127",
+      "category": "Đề 3",
+      "difficulty": "easy",
+      "question": "They _____ to the beach last weekend.",
+      "options": [
+        "go",
+        "went",
+        "gone",
+        "going"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q128",
+      "category": "Đề 3",
+      "difficulty": "easy",
+      "question": "Choose the correct article: He is _____ honest man.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q129",
+      "category": "Đề 3",
+      "difficulty": "easy",
+      "question": "Which word is a noun?",
+      "options": [
+        "Drive",
+        "Driving",
+        "Driver",
+        "Driven"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q130",
+      "category": "Đề 3",
+      "difficulty": "easy",
+      "question": "We _____ our grandparents every Sunday.",
+      "options": [
+        "visit",
+        "visits",
+        "visited",
+        "visiting"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q131",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "She _____ in this city for ten years.",
+      "options": [
+        "lived",
+        "has lived",
+        "lives",
+        "living"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q132",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "Choose the synonym of \"wealthy\".",
+      "options": [
+        "Poor",
+        "Rich",
+        "Hungry",
+        "Weak"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q133",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "Choose the antonym of \"polite\".",
+      "options": [
+        "Kind",
+        "Friendly",
+        "Rude",
+        "Honest"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q134",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "She is responsible _____ the project.",
+      "options": [
+        "for",
+        "to",
+        "with",
+        "of"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q135",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "The woman _____ lives next door is a nurse.",
+      "options": [
+        "who",
+        "which",
+        "where",
+        "whose"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q136",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "If I _____ enough time, I will help you.",
+      "options": [
+        "have",
+        "had",
+        "will have",
+        "having"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q137",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "The classroom _____ every afternoon.",
+      "options": [
+        "cleans",
+        "is cleaned",
+        "cleaned",
+        "clean"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q138",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "He insisted _____ paying the bill.",
+      "options": [
+        "on",
+        "in",
+        "at",
+        "with"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q139",
+      "category": "Đề 3",
+      "difficulty": "hard",
+      "question": "Rarely _____ such an interesting lecture.",
+      "options": [
+        "I have heard",
+        "have I heard",
+        "I heard",
+        "did I heard"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q140",
+      "category": "Đề 3",
+      "difficulty": "hard",
+      "question": "Choose the meaning of \"comprehensive\".",
+      "options": [
+        "Incomplete",
+        "Thorough and complete",
+        "Difficult",
+        "Confusing"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q141",
+      "category": "Đề 3",
+      "difficulty": "hard",
+      "question": "Not only _____ late, but he also forgot the documents.",
+      "options": [
+        "he arrived",
+        "did he arrive",
+        "he did arrive",
+        "arrived he"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q142",
+      "category": "Đề 3",
+      "difficulty": "hard",
+      "question": "Choose the correct reported speech: Tom said, \"I must finish this today.\"",
+      "options": [
+        "Tom said that he must finish that day.",
+        "Tom said that he had to finish that day.",
+        "Tom said he has to finish today.",
+        "Tom told that he had to finish that day."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q143",
+      "category": "Đề 3",
+      "difficulty": "hard",
+      "question": "If she _____ the warning, she wouldn't have made that mistake.",
+      "options": [
+        "followed",
+        "had followed",
+        "follows",
+        "has followed"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q144",
+      "category": "Đề 3",
+      "difficulty": "hard",
+      "question": "The contract _____ before both parties signed it.",
+      "options": [
+        "had prepared",
+        "had been prepared",
+        "was preparing",
+        "has prepared"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q145",
+      "category": "Đề 3",
+      "difficulty": "hard",
+      "question": "Choose the synonym of \"fragile\".",
+      "options": [
+        "Strong",
+        "Delicate",
+        "Heavy",
+        "Hard"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q146",
+      "category": "Đề 3",
+      "difficulty": "hard",
+      "question": "Choose the antonym of \"expand\".",
+      "options": [
+        "Grow",
+        "Increase",
+        "Shrink",
+        "Develop"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q147",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "I'd rather _____ by train than by bus.",
+      "options": [
+        "travel",
+        "travels",
+        "traveling",
+        "to travel"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q148",
+      "category": "Đề 3",
+      "difficulty": "medium",
+      "question": "Choose the correct sentence.",
+      "options": [
+        "She avoids to eat fast food.",
+        "She avoids eating fast food.",
+        "She avoids eat fast food.",
+        "She avoid eating fast food."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q149",
+      "category": "Đề 3",
+      "difficulty": "easy",
+      "question": "How many hours are there in one day?",
+      "options": [
+        "12",
+        "18",
+        "24",
+        "30"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q150",
+      "category": "Đề 3",
+      "difficulty": "easy",
+      "question": "Which season comes after summer?",
+      "options": [
+        "Spring",
+        "Winter",
+        "Autumn",
+        "Rainy"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q151",
+      "category": "Đề 4",
+      "difficulty": "easy",
+      "question": "He _____ football every Saturday.",
+      "options": [
+        "play",
+        "plays",
+        "playing",
+        "played"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q152",
+      "category": "Đề 4",
+      "difficulty": "easy",
+      "question": "I _____ a student at FPT University.",
+      "options": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q153",
+      "category": "Đề 4",
+      "difficulty": "easy",
+      "question": "She _____ coffee every morning.",
+      "options": [
+        "drink",
+        "drinks",
+        "drinking",
+        "drank"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q154",
+      "category": "Đề 4",
+      "difficulty": "easy",
+      "question": "Choose the correct sentence.",
+      "options": [
+        "They doesn't work here.",
+        "They don't work here.",
+        "They don't works here.",
+        "They not work here."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q155",
+      "category": "Đề 4",
+      "difficulty": "easy",
+      "question": "There _____ a lot of students in the classroom.",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "be"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q156",
+      "category": "Đề 4",
+      "difficulty": "easy",
+      "question": "My brother _____ his homework after dinner.",
+      "options": [
+        "do",
+        "does",
+        "doing",
+        "did"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q157",
+      "category": "Đề 4",
+      "difficulty": "easy",
+      "question": "Choose the plural form of 'person'.",
+      "options": [
+        "persons",
+        "peoples",
+        "people",
+        "persones"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q158",
+      "category": "Đề 4",
+      "difficulty": "easy",
+      "question": "Which word is a verb?",
+      "options": [
+        "Happiness",
+        "Happy",
+        "Happily",
+        "Improve"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "q159",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "She _____ English for three years.",
+      "options": [
+        "studies",
+        "has studied",
+        "studied",
+        "studying"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q160",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "If I _____ you, I would accept the offer.",
+      "options": [
+        "am",
+        "was",
+        "were",
+        "will be"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q161",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "He is afraid _____ making mistakes.",
+      "options": [
+        "of",
+        "at",
+        "for",
+        "with"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q162",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "Choose the synonym of 'difficult'.",
+      "options": [
+        "Easy",
+        "Hard",
+        "Simple",
+        "Clear"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q163",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "Choose the antonym of 'increase'.",
+      "options": [
+        "Grow",
+        "Rise",
+        "Reduce",
+        "Develop"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q164",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "She decided _____ abroad next year.",
+      "options": [
+        "study",
+        "studying",
+        "to study",
+        "studied"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q165",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "The computer _____ by my friend yesterday.",
+      "options": [
+        "fixed",
+        "was fixed",
+        "is fixed",
+        "fix"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q166",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "The woman _____ lives next door is a teacher.",
+      "options": [
+        "who",
+        "which",
+        "where",
+        "whose"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q167",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "By tomorrow, they _____ the project.",
+      "options": [
+        "complete",
+        "completed",
+        "will have completed",
+        "completing"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q168",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "He apologized _____ his mistake.",
+      "options": [
+        "for",
+        "to",
+        "with",
+        "at"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q169",
+      "category": "Đề 4",
+      "difficulty": "hard",
+      "question": "When she arrived, everyone _____.",
+      "options": [
+        "left",
+        "had left",
+        "has left",
+        "leave"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q170",
+      "category": "Đề 4",
+      "difficulty": "hard",
+      "question": "What does 'persistent' mean?",
+      "options": [
+        "Giving up easily",
+        "Continuing firmly",
+        "Very weak",
+        "Very quiet"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q171",
+      "category": "Đề 4",
+      "difficulty": "hard",
+      "question": "Neither the manager nor the employees _____ satisfied.",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "be"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q172",
+      "category": "Đề 4",
+      "difficulty": "hard",
+      "question": "Choose the correct reported speech: He said, \"I was busy.\"",
+      "options": [
+        "He said he was busy.",
+        "He said he is busy.",
+        "He said he had been busy.",
+        "He told he busy."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q173",
+      "category": "Đề 4",
+      "difficulty": "hard",
+      "question": "If she _____ harder, she could have succeeded.",
+      "options": [
+        "worked",
+        "had worked",
+        "works",
+        "has worked"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q174",
+      "category": "Đề 4",
+      "difficulty": "hard",
+      "question": "The documents _____ before the meeting started.",
+      "options": [
+        "had prepared",
+        "had been prepared",
+        "prepare",
+        "were preparing"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q175",
+      "category": "Đề 4",
+      "difficulty": "hard",
+      "question": "What does 'inevitable' mean?",
+      "options": [
+        "Avoidable",
+        "Certain to happen",
+        "Impossible",
+        "Unusual"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q176",
+      "category": "Đề 4",
+      "difficulty": "easy",
+      "question": "My sister _____ a book before going to bed.",
+      "options": [
+        "read",
+        "reads",
+        "reading",
+        "readed"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q177",
+      "category": "Đề 4",
+      "difficulty": "easy",
+      "question": "They _____ dinner together yesterday.",
+      "options": [
+        "have",
+        "has",
+        "had",
+        "having"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q178",
+      "category": "Đề 4",
+      "difficulty": "easy",
+      "question": "Choose the correct article: She bought _____ orange.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q179",
+      "category": "Đề 4",
+      "difficulty": "easy",
+      "question": "Which word is an adjective?",
+      "options": [
+        "Danger",
+        "Dangerous",
+        "Dangerously",
+        "Endanger"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q180",
+      "category": "Đề 4",
+      "difficulty": "easy",
+      "question": "We _____ our teacher every morning.",
+      "options": [
+        "greet",
+        "greets",
+        "greeted",
+        "greeting"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q181",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "I _____ this laptop for two years.",
+      "options": [
+        "use",
+        "used",
+        "have used",
+        "am using"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q182",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "Choose the synonym of 'beautiful'.",
+      "options": [
+        "Ugly",
+        "Pretty",
+        "Bad",
+        "Small"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q183",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "Choose the antonym of 'dangerous'.",
+      "options": [
+        "Safe",
+        "Risky",
+        "Difficult",
+        "Hard"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q184",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "She is famous _____ her paintings.",
+      "options": [
+        "for",
+        "with",
+        "to",
+        "at"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q185",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "The movie _____ we watched was interesting.",
+      "options": [
+        "who",
+        "which",
+        "where",
+        "whose"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q186",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "If you study hard, you _____ the exam.",
+      "options": [
+        "pass",
+        "passed",
+        "will pass",
+        "would pass"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q187",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "The room _____ before the guests arrived.",
+      "options": [
+        "cleaned",
+        "had been cleaned",
+        "has cleaned",
+        "was cleaning"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q188",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "He succeeded _____ solving the problem.",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "for"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q189",
+      "category": "Đề 4",
+      "difficulty": "hard",
+      "question": "Only after the accident _____ the danger.",
+      "options": [
+        "he realized",
+        "did he realize",
+        "he did realize",
+        "realized he"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q190",
+      "category": "Đề 4",
+      "difficulty": "hard",
+      "question": "Choose the meaning of 'versatile'.",
+      "options": [
+        "Having many different abilities",
+        "Very weak",
+        "Very expensive",
+        "Unfriendly"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q191",
+      "category": "Đề 4",
+      "difficulty": "hard",
+      "question": "Hardly _____ when the teacher entered.",
+      "options": [
+        "had they arrived",
+        "they arrived",
+        "did they arrive",
+        "they had arrived"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q192",
+      "category": "Đề 4",
+      "difficulty": "hard",
+      "question": "Choose the correct reported speech: Anna said, \"I will help you.\"",
+      "options": [
+        "Anna said she will help me.",
+        "Anna said she would help me.",
+        "Anna said she helps me.",
+        "Anna told she help me."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q193",
+      "category": "Đề 4",
+      "difficulty": "hard",
+      "question": "If I _____ about the problem, I would have helped you.",
+      "options": [
+        "know",
+        "knew",
+        "had known",
+        "have known"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q194",
+      "category": "Đề 4",
+      "difficulty": "hard",
+      "question": "The machine _____ before the technician arrived.",
+      "options": [
+        "had repaired",
+        "had been repaired",
+        "was repairing",
+        "has repaired"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q195",
+      "category": "Đề 4",
+      "difficulty": "hard",
+      "question": "Choose the synonym of 'accurate'.",
+      "options": [
+        "Wrong",
+        "Correct",
+        "Fast",
+        "Large"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q196",
+      "category": "Đề 4",
+      "difficulty": "hard",
+      "question": "Choose the antonym of 'generous'.",
+      "options": [
+        "Kind",
+        "Helpful",
+        "Selfish",
+        "Friendly"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q197",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "He prefers _____ books to watching TV.",
+      "options": [
+        "read",
+        "reading",
+        "to reading",
+        "reads"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q198",
+      "category": "Đề 4",
+      "difficulty": "medium",
+      "question": "Choose the correct sentence.",
+      "options": [
+        "She has lived here since five years.",
+        "She has lived here for five years.",
+        "She lives here since five years.",
+        "She lived here for five years ago."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q199",
+      "category": "Đề 4",
+      "difficulty": "easy",
+      "question": "How many letters are there in the English alphabet?",
+      "options": [
+        "24",
+        "25",
+        "26",
+        "27"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q200",
+      "category": "Đề 4",
+      "difficulty": "easy",
+      "question": "Which animal is known as the king of the jungle?",
+      "options": [
+        "Tiger",
+        "Lion",
+        "Elephant",
+        "Horse"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q201",
+      "category": "Đề 5",
+      "difficulty": "easy",
+      "question": "She _____ her room every weekend.",
+      "options": [
+        "clean",
+        "cleans",
+        "cleaning",
+        "cleaned"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q202",
+      "category": "Đề 5",
+      "difficulty": "easy",
+      "question": "I _____ my homework after school.",
+      "options": [
+        "do",
+        "does",
+        "did",
+        "doing"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q203",
+      "category": "Đề 5",
+      "difficulty": "easy",
+      "question": "They _____ a movie last night.",
+      "options": [
+        "watch",
+        "watches",
+        "watched",
+        "watching"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q204",
+      "category": "Đề 5",
+      "difficulty": "easy",
+      "question": "Choose the correct sentence.",
+      "options": [
+        "He don't play tennis.",
+        "He doesn't play tennis.",
+        "He doesn't plays tennis.",
+        "He not plays tennis."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q205",
+      "category": "Đề 5",
+      "difficulty": "easy",
+      "question": "There _____ a computer on the desk.",
+      "options": [
+        "are",
+        "is",
+        "were",
+        "be"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q206",
+      "category": "Đề 5",
+      "difficulty": "easy",
+      "question": "My father _____ newspapers every morning.",
+      "options": [
+        "read",
+        "reads",
+        "reading",
+        "readed"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q207",
+      "category": "Đề 5",
+      "difficulty": "easy",
+      "question": "Choose the plural form of 'foot'.",
+      "options": [
+        "foots",
+        "feet",
+        "footes",
+        "footses"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q208",
+      "category": "Đề 5",
+      "difficulty": "easy",
+      "question": "Which word is a noun?",
+      "options": [
+        "Strong",
+        "Strength",
+        "Strongly",
+        "Strengthen"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q209",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "She _____ English since she was a child.",
+      "options": [
+        "learns",
+        "learned",
+        "has learned",
+        "learning"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q210",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "If I _____ enough money, I will buy a car.",
+      "options": [
+        "have",
+        "had",
+        "will have",
+        "having"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q211",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "He is interested _____ learning languages.",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "for"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q212",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "Choose the synonym of 'quick'.",
+      "options": [
+        "Slow",
+        "Fast",
+        "Weak",
+        "Late"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q213",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "Choose the antonym of 'easy'.",
+      "options": [
+        "Simple",
+        "Difficult",
+        "Clear",
+        "Short"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q214",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "She decided _____ a new language.",
+      "options": [
+        "learn",
+        "learning",
+        "to learn",
+        "learned"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q215",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "The cake _____ by my mother yesterday.",
+      "options": [
+        "made",
+        "was made",
+        "is made",
+        "has made"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q216",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "The teacher _____ teaches us English is very kind.",
+      "options": [
+        "who",
+        "which",
+        "where",
+        "whose"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q217",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "By next week, they _____ the assignment.",
+      "options": [
+        "finish",
+        "finished",
+        "will have finished",
+        "finishing"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q218",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "She apologized _____ being late.",
+      "options": [
+        "for",
+        "to",
+        "with",
+        "at"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q219",
+      "category": "Đề 5",
+      "difficulty": "hard",
+      "question": "When I arrived at the station, the train _____.",
+      "options": [
+        "left",
+        "had left",
+        "has left",
+        "leaves"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q220",
+      "category": "Đề 5",
+      "difficulty": "hard",
+      "question": "What does 'remarkable' mean?",
+      "options": [
+        "Ordinary",
+        "Special or impressive",
+        "Small",
+        "Unknown"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q221",
+      "category": "Đề 5",
+      "difficulty": "hard",
+      "question": "Neither the students nor the teacher _____ ready.",
+      "options": [
+        "are",
+        "is",
+        "were",
+        "be"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q222",
+      "category": "Đề 5",
+      "difficulty": "hard",
+      "question": "Choose the correct reported speech: John said, \"I am studying now.\"",
+      "options": [
+        "John said he was studying then.",
+        "John said he is studying now.",
+        "John said he studies.",
+        "John told he studying."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q223",
+      "category": "Đề 5",
+      "difficulty": "hard",
+      "question": "If she _____ earlier, she would not have missed the bus.",
+      "options": [
+        "leaves",
+        "left",
+        "had left",
+        "has left"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q224",
+      "category": "Đề 5",
+      "difficulty": "hard",
+      "question": "The building _____ before the workers arrived.",
+      "options": [
+        "had completed",
+        "had been completed",
+        "was completing",
+        "has completed"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q225",
+      "category": "Đề 5",
+      "difficulty": "hard",
+      "question": "What does 'significant' mean?",
+      "options": [
+        "Important",
+        "Tiny",
+        "Unknown",
+        "Impossible"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q226",
+      "category": "Đề 5",
+      "difficulty": "easy",
+      "question": "He _____ his teeth twice a day.",
+      "options": [
+        "brush",
+        "brushes",
+        "brushing",
+        "brushed"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q227",
+      "category": "Đề 5",
+      "difficulty": "easy",
+      "question": "We _____ a picnic last Sunday.",
+      "options": [
+        "have",
+        "has",
+        "had",
+        "having"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q228",
+      "category": "Đề 5",
+      "difficulty": "easy",
+      "question": "Choose the correct article: She is _____ university student.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q229",
+      "category": "Đề 5",
+      "difficulty": "easy",
+      "question": "Which word is an adverb?",
+      "options": [
+        "Slow",
+        "Slowly",
+        "Slowness",
+        "Slower"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q230",
+      "category": "Đề 5",
+      "difficulty": "easy",
+      "question": "They _____ their teacher yesterday.",
+      "options": [
+        "meet",
+        "met",
+        "meeting",
+        "meets"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q231",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "I _____ this book before.",
+      "options": [
+        "read",
+        "have read",
+        "reading",
+        "reads"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q232",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "Choose the synonym of 'brave'.",
+      "options": [
+        "Coward",
+        "Courageous",
+        "Weak",
+        "Afraid"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q233",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "Choose the antonym of 'generous'.",
+      "options": [
+        "Kind",
+        "Helpful",
+        "Selfish",
+        "Friendly"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q234",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "She is good _____ solving problems.",
+      "options": [
+        "at",
+        "in",
+        "on",
+        "for"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q235",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "The house _____ I live is very old.",
+      "options": [
+        "who",
+        "which",
+        "where",
+        "whose"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q236",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "If it _____ tomorrow, we will cancel the trip.",
+      "options": [
+        "rain",
+        "rains",
+        "rained",
+        "will rain"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q237",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "The documents _____ by the manager.",
+      "options": [
+        "signed",
+        "were signed",
+        "sign",
+        "are signing"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q238",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "He is capable _____ doing this task.",
+      "options": [
+        "of",
+        "to",
+        "with",
+        "for"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q239",
+      "category": "Đề 5",
+      "difficulty": "hard",
+      "question": "No sooner had he arrived _____ the meeting started.",
+      "options": [
+        "when",
+        "than",
+        "that",
+        "then"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q240",
+      "category": "Đề 5",
+      "difficulty": "hard",
+      "question": "Choose the meaning of 'persistent'.",
+      "options": [
+        "Giving up easily",
+        "Continuing despite difficulties",
+        "Very expensive",
+        "Very quiet"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q241",
+      "category": "Đề 5",
+      "difficulty": "hard",
+      "question": "Rarely _____ such a talented person.",
+      "options": [
+        "I have met",
+        "have I met",
+        "I met",
+        "did I met"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q242",
+      "category": "Đề 5",
+      "difficulty": "hard",
+      "question": "Choose the correct reported speech: She said, \"I had finished my work.\"",
+      "options": [
+        "She said she had finished her work.",
+        "She said she has finished her work.",
+        "She said she finished my work.",
+        "She told she finished."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q243",
+      "category": "Đề 5",
+      "difficulty": "hard",
+      "question": "If I _____ about the event, I would have joined.",
+      "options": [
+        "know",
+        "knew",
+        "had known",
+        "have known"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q244",
+      "category": "Đề 5",
+      "difficulty": "hard",
+      "question": "The bridge _____ before the flood destroyed the area.",
+      "options": [
+        "built",
+        "had been built",
+        "was building",
+        "has built"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q245",
+      "category": "Đề 5",
+      "difficulty": "hard",
+      "question": "Choose the synonym of 'essential'.",
+      "options": [
+        "Necessary",
+        "Optional",
+        "Useless",
+        "Small"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q246",
+      "category": "Đề 5",
+      "difficulty": "hard",
+      "question": "Choose the antonym of 'temporary'.",
+      "options": [
+        "Short",
+        "Brief",
+        "Permanent",
+        "Quick"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q247",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "She prefers _____ books to watching TV.",
+      "options": [
+        "read",
+        "reading",
+        "to read",
+        "reads"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q248",
+      "category": "Đề 5",
+      "difficulty": "medium",
+      "question": "Choose the correct sentence.",
+      "options": [
+        "He has lived here since 2020.",
+        "He has lived here for 2020.",
+        "He lived here since 2020.",
+        "He lives here for 2020."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q249",
+      "category": "Đề 5",
+      "difficulty": "easy",
+      "question": "How many minutes are there in one hour?",
+      "options": [
+        "30",
+        "45",
+        "60",
+        "90"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q250",
+      "category": "Đề 5",
+      "difficulty": "easy",
+      "question": "Which color is made by mixing blue and yellow?",
+      "options": [
+        "Red",
+        "Green",
+        "Black",
+        "White"
+      ],
+      "answer": 1
     }
   ],
+  "history": [],
   "$schema": "./node_modules/json-server/schema.json"
 }

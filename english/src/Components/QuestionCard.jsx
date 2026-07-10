@@ -6,11 +6,11 @@ const LETTERS = ['A', 'B', 'C', 'D']
  * QuestionCard – form modal for creating/editing a question.
  * Props: mode ('add'|'edit'), question (obj|null), onSave(data), onClose()
  */
-export default function QuestionCard({ mode, question, onSave, onClose }) {
+export default function QuestionCard({ mode, question, exams = [], defaultExam = 'Đề 1', onSave, onClose }) {
   const [form, setForm] = useState(
     question
       ? { ...question }
-      : { question: '', category: 'Grammar', difficulty: 'easy', options: ['', '', '', ''], answer: 0 }
+      : { question: '', category: defaultExam, difficulty: 'easy', options: ['', '', '', ''], answer: 0 }
   )
   const [errors,  setErrors]  = useState({})
   const [loading, setLoading] = useState(false)
@@ -24,6 +24,7 @@ export default function QuestionCard({ mode, question, onSave, onClose }) {
   const validate = () => {
     const e = {}
     if (!form.question.trim()) e.question = 'Vui lòng nhập nội dung câu hỏi'
+    if (!form.category.trim()) e.category = 'Vui lòng nhập tên đề thi'
     form.options.forEach((o, i) => { if (!o.trim()) e[`opt${i}`] = 'required' })
     setErrors(e)
     return !Object.keys(e).length
@@ -61,12 +62,18 @@ export default function QuestionCard({ mode, question, onSave, onClose }) {
         {/* Category + Difficulty */}
         <div className="form-2col mb16">
           <div className="form-group" style={{ margin: 0 }}>
-            <label>Chủ đề</label>
-            <select value={form.category} onChange={e => setForm({ ...form, category: e.target.value })}>
-              <option value="Grammar">Grammar</option>
-              <option value="Vocabulary">Vocabulary</option>
-              <option value="Reading">Reading</option>
-            </select>
+            <label>Đề thi</label>
+            <input 
+              list="exam-list" 
+              value={form.category} 
+              onChange={e => setForm({ ...form, category: e.target.value })}
+              placeholder="Nhập hoặc chọn đề..."
+              style={errors.category ? { borderColor: 'var(--danger)' } : {}}
+            />
+            <datalist id="exam-list">
+              {exams.map(ex => <option key={ex} value={ex} />)}
+            </datalist>
+            {errors.category && <div className="form-error">{errors.category}</div>}
           </div>
           <div className="form-group" style={{ margin: 0 }}>
             <label>Độ khó</label>

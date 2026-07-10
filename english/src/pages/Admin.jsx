@@ -37,10 +37,10 @@ function QuestionsTab({ notify }) {
   const [questions, setQuestions] = useState([])
   const [loading,   setLoading]   = useState(true)
   const [search,    setSearch]    = useState('')
-  const [catFilter, setCat]       = useState('all')
   const [diffFilter,setDiff]      = useState('all')
   const [modal,     setModal]     = useState(null) // {mode, question?}
   const [deleting,  setDeleting]  = useState(null)
+  const [selectedExam, setSelectedExam] = useState(null)
 
   const fetchAll = async () => {
     setLoading(true)
@@ -51,11 +51,20 @@ function QuestionsTab({ notify }) {
 
   useEffect(() => { fetchAll() }, [])
 
-  const filtered = questions.filter(q => {
+  // EXAMS LOGIC
+  const exams = Array.from(new Set(questions.map(q => q.category))).sort()
+  const examStats = exams.map(ex => ({
+    name: ex,
+    count: questions.filter(q => q.category === ex).length
+  }))
+  const filteredExams = examStats.filter(e => e.name.toLowerCase().includes(search.toLowerCase()))
+
+  // EXAM DETAILS LOGIC
+  const examQuestions = questions.filter(q => q.category === selectedExam)
+  const filteredQs = examQuestions.filter(q => {
     const matchS = q.question.toLowerCase().includes(search.toLowerCase())
-    const matchC = catFilter  === 'all' || q.category  === catFilter
     const matchD = diffFilter === 'all' || q.difficulty === diffFilter
-    return matchS && matchC && matchD
+    return matchS && matchD
   })
 
   const handleSave = async (formData) => {
@@ -86,86 +95,129 @@ function QuestionsTab({ notify }) {
 
   return (
     <>
-      <div className="header-row" style={{ marginBottom: 16 }}>
-        <div>
-          <div style={{ fontWeight: 600, fontSize: 15 }}>{questions.length} câu hỏi</div>
-          <div className="text-sm text-muted">Quản lý toàn bộ ngân hàng câu hỏi</div>
-        </div>
-        <button className="btn btn-primary" onClick={() => setModal({ mode: 'add' })}>
-          ➕ Thêm câu hỏi
-        </button>
-      </div>
-
-      <div className="card">
-        <div className="search-row">
-          <input value={search} onChange={e => setSearch(e.target.value)} placeholder="🔍 Tìm kiếm câu hỏi..." />
-          <select value={catFilter} onChange={e => setCat(e.target.value)}>
-            <option value="all">Tất cả chủ đề</option>
-            <option value="Grammar">Grammar</option>
-            <option value="Vocabulary">Vocabulary</option>
-            <option value="Reading">Reading</option>
-          </select>
-          <select value={diffFilter} onChange={e => setDiff(e.target.value)}>
-            <option value="all">Tất cả độ khó</option>
-            <option value="easy">Dễ</option>
-            <option value="medium">Trung bình</option>
-            <option value="hard">Khó</option>
-          </select>
-        </div>
-
-        {loading ? (
-          <div className="spinner-wrap"><div className="spinner" /></div>
-        ) : (
-          <div className="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>#</th><th>Câu hỏi</th><th>Chủ đề</th><th>Độ khó</th><th>Đáp án đúng</th><th>Thao tác</th>
-                </tr>
-              </thead>
-              <tbody>
-                {filtered.length === 0 && (
-                  <tr><td colSpan={6}>
-                    <div className="empty-state">
-                      <div className="empty-icon">🔍</div>
-                      <h3>Không tìm thấy câu hỏi</h3>
-                    </div>
-                  </td></tr>
-                )}
-                {filtered.map((q, i) => (
-                  <tr key={q.id}>
-                    <td className="text-muted">{i + 1}</td>
-                    <td style={{ maxWidth: 340, color: 'var(--text)' }}>{q.question}</td>
-                    <td><span className="badge badge-purple">{q.category}</span></td>
-                    <td><span className={`badge ${DIFF_CLASS[q.difficulty]}`}>{DIFF_LABEL[q.difficulty]}</span></td>
-                    <td style={{ color: 'var(--success)', fontWeight: 500 }}>
-                      {String.fromCharCode(65 + q.answer)}. {q.options?.[q.answer]}
-                    </td>
-                    <td>
-                      <div className="flex gap8">
-                        <button className="btn btn-outline btn-sm"
-                          onClick={() => setModal({ mode: 'edit', question: q })}>
-                          ✏️ Sửa
-                        </button>
-                        <button className="btn btn-danger btn-sm"
-                          onClick={() => handleDelete(q.id)}
-                          disabled={deleting === q.id}>
-                          {deleting === q.id ? '...' : '🗑️'}
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+      {!selectedExam ? (
+        // --- VIEW 1: EXAM LIST ---
+        <>
+          <div className="header-row" style={{ marginBottom: 16 }}>
+            <div>
+              <div style={{ fontWeight: 600, fontSize: 15 }}>{exams.length} đề thi</div>
+              <div className="text-sm text-muted">Quản lý các đề thi trong hệ thống</div>
+            </div>
+            <button className="btn btn-primary" onClick={() => setModal({ mode: 'add' })}>
+              ➕ Tạo câu hỏi / Đề mới
+            </button>
           </div>
-        )}
-      </div>
+
+          <div className="card">
+            <div className="search-row">
+              <input value={search} onChange={e => setSearch(e.target.value)} placeholder="🔍 Tìm kiếm tên đề thi..." />
+            </div>
+
+            {loading ? (
+              <div className="spinner-wrap"><div className="spinner" /></div>
+            ) : (
+              <div className="grid4">
+                {filteredExams.map(ex => (
+                  <div key={ex.name} className="stat-card" style={{ cursor: 'pointer', transition: 'all 0.2s', padding: 20 }} 
+                       onClick={() => { setSelectedExam(ex.name); setSearch(''); }}>
+                    <div className="stat-icon" style={{ background: 'rgba(108,99,255,.18)' }}>📝</div>
+                    <div>
+                      <div className="stat-val" style={{ fontSize: 18 }}>{ex.name}</div>
+                      <div className="stat-lbl">{ex.count} câu hỏi</div>
+                    </div>
+                  </div>
+                ))}
+                {filteredExams.length === 0 && (
+                   <div className="empty-state" style={{ gridColumn: '1 / -1' }}>
+                     <div className="empty-icon">📭</div>
+                     <h3>Không tìm thấy đề thi</h3>
+                   </div>
+                )}
+              </div>
+            )}
+          </div>
+        </>
+      ) : (
+        // --- VIEW 2: QUESTION LIST ---
+        <>
+          <div className="header-row" style={{ marginBottom: 16 }}>
+            <div className="flex items-c gap12">
+              <button className="btn btn-outline btn-sm" onClick={() => { setSelectedExam(null); setSearch(''); setDiff('all'); }}>
+                ⬅ Quay lại
+              </button>
+              <div>
+                <div style={{ fontWeight: 600, fontSize: 15 }}>Chi tiết: {selectedExam}</div>
+                <div className="text-sm text-muted">{examQuestions.length} câu hỏi</div>
+              </div>
+            </div>
+            <button className="btn btn-primary" onClick={() => setModal({ mode: 'add' })}>
+              ➕ Thêm câu hỏi vào đề này
+            </button>
+          </div>
+
+          <div className="card">
+            <div className="search-row">
+              <input value={search} onChange={e => setSearch(e.target.value)} placeholder="🔍 Tìm kiếm câu hỏi..." />
+              <select value={diffFilter} onChange={e => setDiff(e.target.value)}>
+                <option value="all">Tất cả độ khó</option>
+                <option value="easy">Dễ</option>
+                <option value="medium">Trung bình</option>
+                <option value="hard">Khó</option>
+              </select>
+            </div>
+
+            <div className="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th><th>Câu hỏi</th><th>Độ khó</th><th>Đáp án đúng</th><th>Thao tác</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {filteredQs.length === 0 && (
+                    <tr><td colSpan={5}>
+                      <div className="empty-state">
+                        <div className="empty-icon">🔍</div>
+                        <h3>Không tìm thấy câu hỏi</h3>
+                      </div>
+                    </td></tr>
+                  )}
+                  {filteredQs.map((q, i) => (
+                    <tr key={q.id}>
+                      <td className="text-muted">{i + 1}</td>
+                      <td style={{ maxWidth: 340, color: 'var(--text)' }}>{q.question}</td>
+                      <td><span className={`badge ${DIFF_CLASS[q.difficulty]}`}>{DIFF_LABEL[q.difficulty]}</span></td>
+                      <td style={{ color: 'var(--success)', fontWeight: 500 }}>
+                        {String.fromCharCode(65 + q.answer)}. {q.options?.[q.answer]}
+                      </td>
+                      <td>
+                        <div className="flex gap8">
+                          <button className="btn btn-outline btn-sm"
+                            onClick={() => setModal({ mode: 'edit', question: q })}>
+                            ✏️ Sửa
+                          </button>
+                          <button className="btn btn-danger btn-sm"
+                            onClick={() => handleDelete(q.id)}
+                            disabled={deleting === q.id}>
+                            {deleting === q.id ? '...' : '🗑️'}
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </>
+      )}
 
       {modal && (
         <QuestionCard
           mode={modal.mode}
           question={modal.question}
+          exams={exams}
+          defaultExam={selectedExam || 'Đề 1'}
           onSave={handleSave}
           onClose={() => setModal(null)}
         />
