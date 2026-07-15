@@ -28,7 +28,7 @@
       "id": "5dQ_ZXCd6Ww",
       "name": "Trịnh Phan Kiên",
       "email": "trinhphankien299@gmail.com",
-      "password": "123456",
+      "password": "123",
       "role": "user",
       "createdAt": "2026-07-10T15:53:12.579Z"
     }
@@ -3285,6 +3285,667 @@
       "answer": 1
     }
   ],
-  "history": [],
+  "history": [
+    {
+      "userId": "user1",
+      "userName": "Nguyễn Văn A",
+      "category": "Đề 1",
+      "total": 10,
+      "correct": 5,
+      "score": 50,
+      "details": [
+        {
+          "question": "Choose the correct question.",
+          "options": [
+            "Where do you live?",
+            "Where you do live?",
+            "Where are you live?",
+            "Where does you live?"
+          ],
+          "answer": 0,
+          "selected": 0,
+          "correct": true
+        },
+        {
+          "question": "She _____ to school by bus every day.",
+          "options": [
+            "go",
+            "goes",
+            "going",
+            "gone"
+          ],
+          "answer": 1,
+          "selected": 1,
+          "correct": true
+        },
+        {
+          "question": "Choose the correct sentence.",
+          "options": [
+            "She enjoys to read books.",
+            "She enjoys reading books.",
+            "She enjoy reading books.",
+            "She enjoys read books."
+          ],
+          "answer": 1,
+          "selected": 1,
+          "correct": true
+        },
+        {
+          "question": "Choose the antonym of 'ancient'.",
+          "options": [
+            "Old",
+            "Historic",
+            "Modern",
+            "Traditional"
+          ],
+          "answer": 2,
+          "selected": 0,
+          "correct": false
+        },
+        {
+          "question": "I _____ this book since Monday.",
+          "options": [
+            "read",
+            "have read",
+            "am reading",
+            "reads"
+          ],
+          "answer": 1,
+          "selected": 1,
+          "correct": true
+        },
+        {
+          "question": "Choose the meaning of 'meticulous'.",
+          "options": [
+            "Careless",
+            "Very careful",
+            "Lazy",
+            "Funny"
+          ],
+          "answer": 1,
+          "selected": 1,
+          "correct": true
+        },
+        {
+          "question": "He would rather _____ at home than go out.",
+          "options": [
+            "stay",
+            "stays",
+            "staying",
+            "to stay"
+          ],
+          "answer": 0,
+          "selected": 3,
+          "correct": false
+        },
+        {
+          "question": "If he _____ harder, he would have passed the exam.",
+          "options": [
+            "studied",
+            "had studied",
+            "studies",
+            "has studied"
+          ],
+          "answer": 1,
+          "selected": 3,
+          "correct": false
+        },
+        {
+          "question": "Choose the synonym of 'famous'.",
+          "options": [
+            "Unknown",
+            "Well-known",
+            "Hidden",
+            "Silent"
+          ],
+          "answer": 1,
+          "selected": 2,
+          "correct": false
+        },
+        {
+          "question": "Neither John nor his friends _____ coming tonight.",
+          "options": [
+            "is",
+            "are",
+            "was",
+            "be"
+          ],
+          "answer": 1,
+          "selected": null,
+          "correct": false
+        }
+      ],
+      "id": "Uh6G3FLmxSA",
+      "date": "2026-07-13T09:48:22.160Z"
+    },
+    {
+      "userId": "user1",
+      "userName": "Nguyễn Văn A",
+      "category": "Đề 1",
+      "total": 10,
+      "correct": 0,
+      "score": 0,
+      "details": [
+        {
+          "question": "She _____ to school by bus every day.",
+          "options": [
+            "go",
+            "goes",
+            "going",
+            "gone"
+          ],
+          "answer": 1,
+          "selected": null,
+          "correct": false
+        },
+        {
+          "question": "This is the student _____ won the competition.",
+          "options": [
+            "which",
+            "who",
+            "where",
+            "whose"
+          ],
+          "answer": 1,
+          "selected": null,
+          "correct": false
+        },
+        {
+          "question": "Choose the correct sentence.",
+          "options": [
+            "She enjoys to read books.",
+            "She enjoys reading books.",
+            "She enjoy reading books.",
+            "She enjoys read books."
+          ],
+          "answer": 1,
+          "selected": null,
+          "correct": false
+        },
+        {
+          "question": "He is good _____ mathematics.",
+          "options": [
+            "at",
+            "on",
+            "in",
+            "with"
+          ],
+          "answer": 0,
+          "selected": null,
+          "correct": false
+        },
+        {
+          "question": "Choose the correct article: I bought _____ umbrella yesterday.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "no article"
+          ],
+          "answer": 1,
+          "selected": null,
+          "correct": false
+        },
+        {
+          "question": "Choose the correct plural form of 'mouse'.",
+          "options": [
+            "mouses",
+            "mouse",
+            "mice",
+            "mices"
+          ],
+          "answer": 2,
+          "selected": null,
+          "correct": false
+        },
+        {
+          "question": "Choose the synonym of 'famous'.",
+          "options": [
+            "Unknown",
+            "Well-known",
+            "Hidden",
+            "Silent"
+          ],
+          "answer": 1,
+          "selected": null,
+          "correct": false
+        },
+        {
+          "question": "The project _____ before the manager arrived.",
+          "options": [
+            "completed",
+            "had been completed",
+            "has completed",
+            "was completing"
+          ],
+          "answer": 1,
+          "selected": null,
+          "correct": false
+        },
+        {
+          "question": "Choose the antonym of 'scarce'.",
+          "options": [
+            "Rare",
+            "Limited",
+            "Abundant",
+            "Small"
+          ],
+          "answer": 2,
+          "selected": null,
+          "correct": false
+        },
+        {
+          "question": "If it _____ tomorrow, we will stay at home.",
+          "options": [
+            "rain",
+            "rains",
+            "rained",
+            "will rain"
+          ],
+          "answer": 1,
+          "selected": null,
+          "correct": false
+        }
+      ],
+      "id": "90KaVKHeaaE",
+      "date": "2026-07-13T09:51:42.439Z"
+    },
+    {
+      "userId": "5dQ_ZXCd6Ww",
+      "userName": "Trịnh Phan Kiên",
+      "category": "Đề 1",
+      "total": 10,
+      "correct": 0,
+      "score": 0,
+      "details": [
+        {
+          "question": "My brother _____ TV every evening.",
+          "options": [
+            "watch",
+            "watches",
+            "watching",
+            "watched"
+          ],
+          "answer": 1,
+          "selected": 0,
+          "correct": false
+        },
+        {
+          "question": "She _____ to school by bus every day.",
+          "options": [
+            "go",
+            "goes",
+            "going",
+            "gone"
+          ],
+          "answer": 1,
+          "selected": null,
+          "correct": false
+        },
+        {
+          "question": "He would rather _____ at home than go out.",
+          "options": [
+            "stay",
+            "stays",
+            "staying",
+            "to stay"
+          ],
+          "answer": 0,
+          "selected": 1,
+          "correct": false
+        },
+        {
+          "question": "If it _____ tomorrow, we will stay at home.",
+          "options": [
+            "rain",
+            "rains",
+            "rained",
+            "will rain"
+          ],
+          "answer": 1,
+          "selected": null,
+          "correct": false
+        },
+        {
+          "question": "Hardly had she entered the room _____ everyone stood up.",
+          "options": [
+            "than",
+            "when",
+            "then",
+            "that"
+          ],
+          "answer": 1,
+          "selected": null,
+          "correct": false
+        },
+        {
+          "question": "They _____ football every Sunday.",
+          "options": [
+            "play",
+            "plays",
+            "playing",
+            "played"
+          ],
+          "answer": 0,
+          "selected": null,
+          "correct": false
+        },
+        {
+          "question": "She suggested _____ to the beach.",
+          "options": [
+            "go",
+            "going",
+            "to go",
+            "went"
+          ],
+          "answer": 1,
+          "selected": null,
+          "correct": false
+        },
+        {
+          "question": "She usually _____ breakfast at 7 a.m.",
+          "options": [
+            "have",
+            "has",
+            "having",
+            "had"
+          ],
+          "answer": 1,
+          "selected": null,
+          "correct": false
+        },
+        {
+          "question": "Choose the antonym of 'scarce'.",
+          "options": [
+            "Rare",
+            "Limited",
+            "Abundant",
+            "Small"
+          ],
+          "answer": 2,
+          "selected": null,
+          "correct": false
+        },
+        {
+          "question": "Choose the correct article: I bought _____ umbrella yesterday.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "no article"
+          ],
+          "answer": 1,
+          "selected": null,
+          "correct": false
+        }
+      ],
+      "id": "lBG8uYO-JeY",
+      "date": "2026-07-13T10:09:07.765Z"
+    },
+    {
+      "userId": "5dQ_ZXCd6Ww",
+      "userName": "Trịnh Phan Kiên",
+      "category": "Đề 1",
+      "total": 10,
+      "correct": 2,
+      "score": 20,
+      "details": [
+        {
+          "question": "He is good _____ mathematics.",
+          "options": [
+            "at",
+            "on",
+            "in",
+            "with"
+          ],
+          "answer": 0,
+          "selected": 0,
+          "correct": true
+        },
+        {
+          "question": "No sooner _____ home than it started raining.",
+          "options": [
+            "I reached",
+            "had I reached",
+            "I had reached",
+            "did I reach"
+          ],
+          "answer": 1,
+          "selected": 2,
+          "correct": false
+        },
+        {
+          "question": "There _____ three books on the desk.",
+          "options": [
+            "is",
+            "are",
+            "was",
+            "be"
+          ],
+          "answer": 1,
+          "selected": 0,
+          "correct": false
+        },
+        {
+          "question": "Choose the correct sentence.",
+          "options": [
+            "He don't like music.",
+            "He doesn't likes music.",
+            "He doesn't like music.",
+            "He not like music."
+          ],
+          "answer": 2,
+          "selected": 1,
+          "correct": false
+        },
+        {
+          "question": "If he _____ harder, he would have passed the exam.",
+          "options": [
+            "studied",
+            "had studied",
+            "studies",
+            "has studied"
+          ],
+          "answer": 1,
+          "selected": 2,
+          "correct": false
+        },
+        {
+          "question": "If it _____ tomorrow, we will stay at home.",
+          "options": [
+            "rain",
+            "rains",
+            "rained",
+            "will rain"
+          ],
+          "answer": 1,
+          "selected": 0,
+          "correct": false
+        },
+        {
+          "question": "Which word is a verb?",
+          "options": [
+            "Happiness",
+            "Beautiful",
+            "Run",
+            "Slowly"
+          ],
+          "answer": 2,
+          "selected": 2,
+          "correct": true
+        },
+        {
+          "question": "This is the student _____ won the competition.",
+          "options": [
+            "which",
+            "who",
+            "where",
+            "whose"
+          ],
+          "answer": 1,
+          "selected": 0,
+          "correct": false
+        },
+        {
+          "question": "Which word is an adjective?",
+          "options": [
+            "Quick",
+            "Quickly",
+            "Quickness",
+            "Quicken"
+          ],
+          "answer": 0,
+          "selected": 3,
+          "correct": false
+        },
+        {
+          "question": "The book _____ by my teacher yesterday.",
+          "options": [
+            "gave",
+            "was given",
+            "is given",
+            "has given"
+          ],
+          "answer": 1,
+          "selected": 0,
+          "correct": false
+        }
+      ],
+      "id": "hxYrXJ7nNTM",
+      "date": "2026-07-13T10:24:58.269Z"
+    },
+    {
+      "userId": "5dQ_ZXCd6Ww",
+      "userName": "Trịnh Phan Kiên",
+      "category": "Đề 4",
+      "total": 10,
+      "correct": 4,
+      "score": 40,
+      "details": [
+        {
+          "question": "Which word is a verb?",
+          "options": [
+            "Happiness",
+            "Happy",
+            "Happily",
+            "Improve"
+          ],
+          "answer": 3,
+          "selected": 0,
+          "correct": false
+        },
+        {
+          "question": "If she _____ harder, she could have succeeded.",
+          "options": [
+            "worked",
+            "had worked",
+            "works",
+            "has worked"
+          ],
+          "answer": 1,
+          "selected": 1,
+          "correct": true
+        },
+        {
+          "question": "Choose the plural form of 'person'.",
+          "options": [
+            "persons",
+            "peoples",
+            "people",
+            "persones"
+          ],
+          "answer": 2,
+          "selected": 0,
+          "correct": false
+        },
+        {
+          "question": "She _____ coffee every morning.",
+          "options": [
+            "drink",
+            "drinks",
+            "drinking",
+            "drank"
+          ],
+          "answer": 1,
+          "selected": 1,
+          "correct": true
+        },
+        {
+          "question": "He succeeded _____ solving the problem.",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "for"
+          ],
+          "answer": 0,
+          "selected": 0,
+          "correct": true
+        },
+        {
+          "question": "Only after the accident _____ the danger.",
+          "options": [
+            "he realized",
+            "did he realize",
+            "he did realize",
+            "realized he"
+          ],
+          "answer": 1,
+          "selected": 3,
+          "correct": false
+        },
+        {
+          "question": "Which word is an adjective?",
+          "options": [
+            "Danger",
+            "Dangerous",
+            "Dangerously",
+            "Endanger"
+          ],
+          "answer": 1,
+          "selected": 0,
+          "correct": false
+        },
+        {
+          "question": "I _____ this laptop for two years.",
+          "options": [
+            "use",
+            "used",
+            "have used",
+            "am using"
+          ],
+          "answer": 2,
+          "selected": 1,
+          "correct": false
+        },
+        {
+          "question": "Choose the meaning of 'versatile'.",
+          "options": [
+            "Having many different abilities",
+            "Very weak",
+            "Very expensive",
+            "Unfriendly"
+          ],
+          "answer": 0,
+          "selected": 0,
+          "correct": true
+        },
+        {
+          "question": "The woman _____ lives next door is a teacher.",
+          "options": [
+            "who",
+            "which",
+            "where",
+            "whose"
+          ],
+          "answer": 0,
+          "selected": 3,
+          "correct": false
+        }
+      ],
+      "id": "sRJa0pIZd0U",
+      "date": "2026-07-13T10:25:29.658Z"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
